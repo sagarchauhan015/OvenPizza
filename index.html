@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OvenPizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="op-section">
+        <div class="op-navbar">
+            <p>Create Your Own Pizzaaaa!</p>
+        </div>
+
+
+        <div class="op-container">
+
+            <div class="op-lsb">
+                <div class="op-lsb-heading">
+                    Pizza Bases
+                </div>
+                <div class="op-lsb-menu">
+
+                    <div class="op-lsb-menu-item">
+                        <div class="menu-img" >
+                            <img id="draggable-1" ondragstart="onDragStart(event);" draggable="true" src="Assets/PizzaBase1.png" alt="Pizza">
+                        </div>
+                        <div class="menu-heading">
+                            Cheese Crust
+                        </div>
+                    </div>
+                    <div class="op-lsb-menu-item">
+                        <div class="menu-img">
+                            <img id="draggable-2" ondragstart="onDragStart(event);" draggable="true" src="Assets/PizzaBase23.png" alt="Pizza">
+                        </div>
+                        <div class="menu-heading">
+                            Hand Tossed
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="op-middle">
+                <div class="op-instruction">
+                    <span>Instructions: </span><span>First Drag the pizza base and drop it here</span>
+                </div>
+
+                <div class="op-middle-holder">
+                    <div class="op-holder"  ondragover="onDragOver(event);"
+                    ondrop="onDrop(event);">
+                    
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="op-rsb">
+                <div class="op-rsb-heading">
+                    Pizza Toppings
+                </div>
+
+                <div class="op-rsb-menu">
+
+                    <div class="op-rsb-menu-item" draggable="true">
+                        <div class="menu-img">
+                            <img draggable="false" src="Assets/Tomato.png" alt="Pizza">
+                        </div>
+                        <div class="menu-heading">
+                            Tomato
+                        </div>
+                    </div>
+                    <div class="op-lsb-menu-item" draggable="true">
+                        <div class="menu-img">
+                            <img draggable="false" src="Assets/Olive.png" alt="Pizza">
+                        </div>
+                        <div class="menu-heading">
+                            Olive
+                        </div>
+                    
+                    </div>
+                    <div class="op-lsb-menu-item" draggable="true">
+                        <div class="menu-img">
+                            <img draggable="false" src="Assets/Mushroom.png" alt="Pizza">
+                        </div>
+                        <div class="menu-heading">
+                            Mushroom
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
