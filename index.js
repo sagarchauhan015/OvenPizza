@@ -18,9 +18,16 @@ function onDrop(event) {
     draggableElement.style.height = '300px';
     draggableElement.style.position = 'absolute';
     draggableElement.style.zIndex = Index;
+    draggableElement.classList.add('no-dropable');
 
     const dropzone = event.target;
-    dropzone.appendChild(draggableElement);
+
+    if(dropzone.classList.contains('no-dropable') == true){
+        dropzone.parentElement.appendChild(draggableElement);
+    }
+    else{
+        dropzone.appendChild(draggableElement);
+    }
 
     Index++;
     event.dataTransfer.clearData();
