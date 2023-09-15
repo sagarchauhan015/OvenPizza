@@ -121,3 +121,38 @@
     position: absolute;
     z-index: 3;
 } */
+
+
+@media (max-width: 800px) and (min-width: 300px){
+    html{
+        font-size: 14px;
+    }
+    .op-container{
+        flex-direction: column;
+    }
+    .op-lsb, .op-rsb{
+        width: 100%;
+        order: 0;
+    }
+    .op-lsb-heading{
+        margin-bottom: 0rem;
+    }
+    .op-lsb-menu, .op-rsb-menu{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .op-lsb-menu-item, .op-rsb-menu-item{
+        margin-bottom: 0rem;
+    }
+    .menu-img{
+        height: fit-content;
+    }
+    .menu-img > img{
+        width: 50px;
+        height: 50px;
+    }
+    .op-middle{
+        width: 100%;
+    }
+}
