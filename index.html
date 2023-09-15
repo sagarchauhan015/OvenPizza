@@ -22,7 +22,7 @@
                 <div class="op-lsb-menu">
 
                     <div class="op-lsb-menu-item">
-                        <div class="menu-img" >
+                        <div class="menu-img bases">
                             <img id="draggable-1" ondragstart="onDragStart(event);" draggable="true" src="Assets/PizzaBase1.png" alt="Pizza">
                         </div>
                         <div class="menu-heading">
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="op-lsb-menu-item">
-                        <div class="menu-img">
+                        <div class="menu-img bases">
                             <img id="draggable-2" ondragstart="onDragStart(event);" draggable="true" src="Assets/PizzaBase23.png" alt="Pizza">
                         </div>
                         <div class="menu-heading">
@@ -48,10 +48,16 @@
                 </div>
 
                 <div class="op-middle-holder">
-                    <div class="op-holder"  ondragover="onDragOver(event);"
+
+
+                    <div class="op-holder-wrapper" ondragover="onDragOver(event);"
                     ondrop="onDrop(event);">
-                    
+                        <div class="op-holder no-dropable">
+                            
+                        </div>
                     </div>
+
+                    
                 </div>
             </div>
 
@@ -63,26 +69,26 @@
 
                 <div class="op-rsb-menu">
 
-                    <div class="op-rsb-menu-item" draggable="true">
-                        <div class="menu-img">
-                            <img draggable="false" src="Assets/Tomato.png" alt="Pizza">
+                    <div class="op-rsb-menu-item" >
+                        <div class="menu-img toppings">
+                            <img id="draggable-3" ondragstart="onDragStart(event);" draggable="true" src="Assets/Tomato.png" alt="Pizza">
                         </div>
                         <div class="menu-heading">
                             Tomato
                         </div>
                     </div>
-                    <div class="op-lsb-menu-item" draggable="true">
-                        <div class="menu-img">
-                            <img draggable="false" src="Assets/Olive.png" alt="Pizza">
+                    <div class="op-lsb-menu-item" >
+                        <div class="menu-img toppings">
+                            <img id="draggable-4" ondragstart="onDragStart(event);" draggable="true" src="Assets/Olive.png" alt="Pizza">
                         </div>
                         <div class="menu-heading">
                             Olive
                         </div>
                     
                     </div>
-                    <div class="op-lsb-menu-item" draggable="true">
-                        <div class="menu-img">
-                            <img draggable="false" src="Assets/Mushroom.png" alt="Pizza">
+                    <div class="op-lsb-menu-item" >
+                        <div class="menu-img toppings">
+                            <img id="draggable-5" ondragstart="onDragStart(event);" draggable="true"  src="Assets/Mushroom.png" alt="Pizza">
                         </div>
                         <div class="menu-heading">
                             Mushroom
