@@ -1,3 +1,5 @@
+let Index = 10;
+
 function onDragStart(event) {
     event
       .dataTransfer
@@ -9,11 +11,11 @@ function onDragOver(event) {
     event.preventDefault();
 }
 
-let Index = 10;
+
 function onDrop(event) {
     const id = event.dataTransfer.getData('text');
 
-    const draggableElement = document.getElementById(id);
+    const draggableElement = document.getElementById(id).cloneNode();
     draggableElement.style.width = '300px';
     draggableElement.style.height = '300px';
     draggableElement.style.position = 'absolute';
@@ -22,14 +24,20 @@ function onDrop(event) {
 
     const dropzone = event.target;
 
-    if(dropzone.classList.contains('no-dropable') == true){
-        dropzone.parentElement.appendChild(draggableElement);
+    if((dropzone.classList.contains('bases') && draggableElement.classList.contains('bases')) || dropzone.classList.contains('toppings') && draggableElement.classList.contains('bases')){
+        alert("You can't add a base over another base.")
+        event.preventDefault();
     }
     else{
-        dropzone.appendChild(draggableElement);
+        if(dropzone.classList.contains('no-dropable') == true){
+            dropzone.parentElement.appendChild(draggableElement);
+        }
+        else{
+            dropzone.appendChild(draggableElement);
+        }
+        Index++;
     }
 
-    Index++;
     event.dataTransfer.clearData();
 
 }
