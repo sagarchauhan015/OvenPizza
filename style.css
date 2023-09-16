@@ -143,10 +143,14 @@
 .user-action-btn:hover{
     background-color: #b99249;
 }
+
+
 @keyframes rotate {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
+
+
 
 @media (max-width: 800px) and (min-width: 300px){
     html{

@@ -7,6 +7,8 @@ function abort(){
 
 function baking(){
     if(isFinished === true){
+        document.getElementById('status').innerHTML = "Status: ";
+        document.getElementById('instruct').innerHTML = "Hurray! Your pizza is baking."
         document.querySelector(".op-holder-wrapper").classList.add('rotating');
     }
 }
