@@ -1,6 +1,6 @@
 # OvenPizza
 
-![Pizza Maker](demo.gif)
+![Pizza Maker](https://github.com/sagarchauhan015/OvenPizza/blob/main/OvenPizza.gif)
 
 ## Overview
 
