@@ -27,7 +27,7 @@ To run this web app locally, follow these steps:
 1. Clone this repository to your local machine using Git:
 
    ```bash
-   git clone https://github.com/your-username/pizza-maker.git
+   git clone https://github.com/sagarchauhan015/OvenPizza.git
    ```
 
 2. Navigate to the project directory:
