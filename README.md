@@ -18,7 +18,7 @@ The Pizza Maker Web App is a simple interactive web application that allows user
 
 ## Demo
 
-You can see a live demo of the Pizza Maker Web App [here]([https://example.com/pizza-maker-demo](https://production.d1qrj9mku6nqxp.amplifyapp.com)).
+You can see a live demo of the Pizza Maker Web App [here]([https://production.d1qrj9mku6nqxp.amplifyapp.com]).
 
 ## Installation
 
@@ -32,9 +32,9 @@ To run this web app locally, follow these steps:
 
 2. Navigate to the project directory:
 
-  ```bash
-  cd OvenPizza
-  ```
+     ```bash
+     cd OvenPizza
+     ```
 
 3. Open the index.html file in your preferred web browser.
 
