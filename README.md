@@ -18,7 +18,7 @@ The Pizza Maker Web App is a simple interactive web application that allows user
 
 ## Demo
 
-You can see a live demo of the Pizza Maker Web App [here]([https://production.d1qrj9mku6nqxp.amplifyapp.com]).
+You can see a live demo of the Pizza Maker Web App [here](https://production.d1qrj9mku6nqxp.amplifyapp.com).
 
 ## Installation
 
