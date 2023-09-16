@@ -13,11 +13,14 @@
     height: 100vh;
 }
 .op-navbar{
+    position: fixed;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1rem 0rem;
     box-shadow: 0 2px 6px grey;
+    background-color: white;
     z-index: 1;
     font-family: 'Shadows Into Light', cursive; 
 }
@@ -28,11 +31,19 @@
 .op-container{
     display: flex;
     z-index: 0;
+    height: calc(100vh);
+    padding-top: 67px;
 }
 .op-lsb{
     width: 25%;
     padding: 1rem;
     border-right: 1px solid grey;
+    height: 100%;
+    overflow: hidden;
+}
+.op-lsb-menu, .op-rsb-menu{
+    height: 90%;
+    overflow: scroll;
 }
 .op-lsb-heading, .op-rsb-heading{
     text-align: center;
@@ -47,6 +58,8 @@
     width: 25%;
     padding: 1rem;
     border-left: 1px solid grey;
+    height: 100%;
+    overflow: hidden;
 }
 .op-lsb-menu-item{
     margin: 0 auto 2rem;
@@ -86,7 +99,7 @@
     text-align: center;
 }
 .op-middle-holder{
-    height: 100%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,12 +142,13 @@
     }
     .op-container{
         flex-direction: column;
+        min-height: 720px;
     }
     .op-lsb, .op-rsb{
         width: 100%;
         order: 0;
     }
-    .op-lsb-heading{
+    .op-lsb-heading, .op-rsb-heading{
         margin-bottom: 0rem;
     }
     .op-lsb-menu, .op-rsb-menu{
@@ -154,5 +168,15 @@
     }
     .op-middle{
         width: 100%;
+    }
+    .op-lsb, .op-rsb{
+        border: none
+    }
+    .op-lsb-menu, .op-rsb-menu{
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .menu-heading{
+        width: max-content;
     }
 }

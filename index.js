@@ -24,20 +24,29 @@ function onDrop(event) {
 
     const dropzone = event.target;
 
-    if((dropzone.classList.contains('bases') && draggableElement.classList.contains('bases')) || dropzone.classList.contains('toppings') && draggableElement.classList.contains('bases')){
-        alert("You can't add a base over another base.")
-        event.preventDefault();
+    if(draggableElement.classList.contains('toppings') && dropzone.classList.contains('empty')){
+        alert("Please Don't Waste Toppings 🙂 \nSelect the pizza base first and then add toppings");
     }
     else{
-        if(dropzone.classList.contains('no-dropable') == true){
-            dropzone.parentElement.appendChild(draggableElement);
+        if((dropzone.classList.contains('bases') && draggableElement.classList.contains('bases')) || dropzone.classList.contains('toppings') && draggableElement.classList.contains('bases')){
+            alert("You can't add a base over another base.")
+            event.preventDefault();
         }
         else{
-            dropzone.appendChild(draggableElement);
+            if(dropzone.classList.contains('no-dropable') == true){
+                dropzone.parentElement.appendChild(draggableElement);
+            }
+            else{
+                dropzone.appendChild(draggableElement);
+            }
+            Index++;
         }
-        Index++;
     }
 
+    
+    if(dropzone.classList.contains('no-dropable')){
+
+    }
     event.dataTransfer.clearData();
 
 }
