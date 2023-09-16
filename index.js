@@ -1,4 +1,31 @@
 let Index = 10;
+let isFinished = false;
+
+function abort(){
+    location.reload();
+}
+
+function baking(){
+    if(isFinished === true){
+        document.querySelector(".op-holder-wrapper").classList.add('rotating');
+    }
+}
+
+function checkAndChange(draggableElement){
+    const layerArray = document.querySelector('.op-holder-wrapper').children;
+
+    if(draggableElement.classList.contains('bases')){
+        document.getElementById('instruct').innerHTML = 'Now add as many as toppings you want';
+    }
+
+    for(let i=0; i<layerArray.length; i++){
+        console.log(layerArray);
+        if(layerArray[i].classList.contains('toppings')){
+            isFinished = true;
+            document.getElementById('finish-btn').removeAttribute('disabled');
+        }
+    }
+}
 
 function onDragStart(event) {
     event
@@ -43,10 +70,7 @@ function onDrop(event) {
         }
     }
 
-    
-    if(dropzone.classList.contains('no-dropable')){
-
-    }
+    checkAndChange(draggableElement);
     event.dataTransfer.clearData();
 
 }
